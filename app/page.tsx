@@ -1,6 +1,6 @@
 import styles from './page.module.scss';
 
-export default function HomeLandingPage() {
+export default function HomePage() {
   return (
     <main className={styles.main}>
       <section>
