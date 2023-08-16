@@ -1,15 +1,28 @@
+import styles from './page.module.scss';
+
 export default function HomeLandingPage() {
   return (
-    <main>
-      <div>
+    <main className={styles.main}>
+      <section>
         <div>
-          <h1>Welcome to the Movie Data Base</h1>
+          <div>
+            <h1>Welcome to The Movie Data Base</h1>
+            <p>
+              Millions of Movies, TV shows and people to discover. Explore now.
+            </p>
+            <div>
+              <input value="search" placeholder="Search" />
+              <button>Search</button>
+            </div>
+          </div>
         </div>
-        <div>
-          <input placeholder="Search" />
-          <button>Search</button>
-        </div>
-      </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
     </main>
   );
 }
