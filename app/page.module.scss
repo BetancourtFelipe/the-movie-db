@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: center;
   background-color: #fff;
   margin-top: 64px;
+  flex-direction: column;
 }

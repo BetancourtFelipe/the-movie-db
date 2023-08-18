@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     typedRoutes: true,
   },
+  images: {
+    domains: ['image.tmdb.org'],
+  },
 };
 
 module.exports = nextConfig;
