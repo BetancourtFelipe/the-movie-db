@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import styles from './page.module.scss';
+import styles from './nowPlaying.module.scss';
 
 export default function NowPlaying() {
   const [movieData, setMovieData] = useState([]);
@@ -28,23 +28,23 @@ export default function NowPlaying() {
   console.log(movieData);
 
   return (
-    <main className={styles.main}>
+    <main>
       <section>
-        <h2>Now Playing</h2>
         <div>
-          {movieData.map((movie) => (
-            <div key={movie.id}>
-              <h3>{movie.title}</h3>
-              <p>{movie.overview}</p>
-              <p>{movie.vote_average}</p>
-              <Image
-                src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
-                alt={movie.title}
-                width={300}
-                height={300}
-              />
-            </div>
-          ))}
+          <div className={styles.movieBox}>
+            {movieData.map((movie) => (
+              <div key={movie.id}>
+                <h3>{movie.title}</h3>
+                <Image
+                  src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
+                  alt={movie.title}
+                  width={300}
+                  height={300}
+                />
+                <p>{movie.vote_average}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </main>

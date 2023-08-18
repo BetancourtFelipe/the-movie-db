@@ -36,8 +36,7 @@ export default function MovieById() {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization:
-            'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYmRiNDYzZDA3YmFmOGYxOWU5ZmIyODZlYmJlYWQ1MCIsInN1YiI6IjY0ZGNmNzFlYTNiNWU2MDBlMjljMTFlNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.e_GZfJFnUS3Q8gBpMoEI8LrVNgEwGZVemW_w3NYUEqE',
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_MOVIE}`,
         },
       };
 
@@ -53,8 +52,6 @@ export default function MovieById() {
     fetchMovieData();
     fetchCredits();
   }, []);
-
-  console.log('rrrrrr', credits);
 
   return (
     <main className={styles.main}>

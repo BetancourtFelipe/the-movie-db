@@ -1,0 +1,31 @@
+.wrapperStyles {
+  max-width: 1248px;
+  margin: auto;
+}
+
+.topNavigationStyles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  background-color: #042541;
+}
+
+.navigationMenuStyles {
+  display: flex;
+  gap: 100px;
+  :hover {
+    border-bottom: 2px solid tomato;
+  }
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-style: 4rem;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
