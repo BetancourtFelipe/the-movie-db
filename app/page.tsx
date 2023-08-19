@@ -1,5 +1,5 @@
-// import MovieById from './MovieById';
-import Movies from './NowPlaying';
+import MovieById from './MovieById';
+import NowPlaying from './NowPlaying';
 import styles from './page.module.scss';
 
 export default function HomePage() {
@@ -22,10 +22,12 @@ export default function HomePage() {
       <section>
         <h2>Now Playing</h2>
         <div>
-          <Movies />
+          <NowPlaying />
         </div>
       </section>
-      <section>{/* <MovieById /> */}</section>
+      <section>
+        <MovieById />
+      </section>
     </main>
   );
 }

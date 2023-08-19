@@ -29,6 +29,8 @@ export default function MovieById() {
       }
     }
 
+    console.log('rrrrr', credits);
+
     async function fetchCredits() {
       const url = 'https://api.themoviedb.org/3/movie/976573/credits';
 

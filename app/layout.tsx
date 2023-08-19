@@ -35,6 +35,12 @@ export default function RootLayout({
                 <Link className={styles.navLink} href="/people">
                   People
                 </Link>
+                <Link className={styles.navLink} href="/login">
+                  Login
+                </Link>
+                <Link className={styles.navLink} href="/register">
+                  Register
+                </Link>
               </nav>
             </div>
           </div>
