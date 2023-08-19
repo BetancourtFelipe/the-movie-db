@@ -1,6 +1,6 @@
-export default function LogInForm() {
+export default function LoginForm() {
   return (
-    <div>
+    <form>
       <div>
         <label>
           username:
@@ -22,6 +22,6 @@ export default function LogInForm() {
         <br />
         <button>Login</button>
       </div>
-    </div>
+    </form>
   );
 }
