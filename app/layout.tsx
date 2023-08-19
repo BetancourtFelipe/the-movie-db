@@ -26,9 +26,14 @@ export default function RootLayout({
                 <Link className={styles.navLink} href="/">
                   TMDB
                 </Link>
-                <Link className={styles.navLink} href="/movies">
+                <div className={styles.dropDown}>
                   Movies
-                </Link>
+                  <div className={styles.dropDownContent}>
+                    <a>1</a>
+                    <a>2</a>
+                    <Link href="/rated" />
+                  </div>
+                </div>
                 <Link className={styles.navLink} href="/tv-shows">
                   TV-Shows
                 </Link>

@@ -1,6 +1,7 @@
-import MovieById from './MovieById';
+// import MovieById from './MovieById';
 import NowPlaying from './NowPlaying';
 import styles from './page.module.scss';
+import PersonList from './PersonList';
 
 export default function HomePage() {
   return (
@@ -26,8 +27,11 @@ export default function HomePage() {
         </div>
       </section>
       <section>
-        <MovieById />
+        <div>
+          <PersonList />
+        </div>
       </section>
+      <section>{/* <MovieById /> */}</section>
     </main>
   );
 }
