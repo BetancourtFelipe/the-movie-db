@@ -23,6 +23,23 @@ export default function PersonList() {
       .catch((err) => console.error('error:', err));
   }, []);
 
+  useEffect(() => {
+    const url = 'https://api.themoviedb.org/3/trending/person/day';
+
+    const options = {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_MOVIE}`,
+      },
+    };
+
+    fetch(url, options)
+      .then((res) => res.json())
+      .then((json) => setPersonList(json.results))
+      .catch((err) => console.error('error:', err));
+  }, []);
+
   console.log(personList);
 
   return (
@@ -34,7 +51,7 @@ export default function PersonList() {
               <div key={person.id}>
                 <h3>{person.name}</h3>
                 {/* <Image
-                  src={` https://api.themoviedb.org/3/person/976573/images`}
+                  src={` https://api.themoviedb.org/3/person/images`}
                   alt={person.title}
                   width={300}
                   height={300}
