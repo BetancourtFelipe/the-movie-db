@@ -40,8 +40,6 @@ export default function PersonList() {
       .catch((err) => console.error('error:', err));
   }, []);
 
-  console.log(personList);
-
   return (
     <main>
       <section>

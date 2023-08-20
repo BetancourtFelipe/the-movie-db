@@ -25,8 +25,6 @@ export default function NowPlaying() {
       .catch((err) => console.error('error:', err));
   }, []);
 
-  console.log(movieData);
-
   return (
     <main>
       <section>

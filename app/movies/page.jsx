@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 export default function Movies() {
@@ -18,6 +19,8 @@ export default function Movies() {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_MOVIE}`,
         },
       };
+
+      console.log('111', popularMovies);
 
       try {
         const response = await fetch(url, options);
@@ -76,13 +79,16 @@ export default function Movies() {
   return (
     <main>
       <section>
+        <h1>Popular Movies</h1>
         <div>
-          <h1>Popular Movies</h1>
-          <ul>
+          <div>
             {popularMovies.map((movie) => (
-              <li key={movie.id}>{movie.title}</li>
+              <div key={movie.id}>
+                <p>{movie.title}</p>
+                <p>{movie.overview}</p>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
       <section>
