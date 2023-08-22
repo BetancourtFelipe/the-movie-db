@@ -83,7 +83,7 @@ export default function Movies() {
         <div>
           <div>
             {popularMovies.map((movie) => (
-              <div key={movie.id}>
+              <div key={`movie-${movie.id}`}>
                 <p>{movie.title}</p>
                 <p>{movie.overview}</p>
               </div>
@@ -94,21 +94,18 @@ export default function Movies() {
       <section>
         <div>
           <h1>Top Rated Movies</h1>
-          <ul>
-            {topRatedMovies.map((movie) => (
-              <li key={movie.id}>{movie.title}</li>
-            ))}
-          </ul>
+
+          {topRatedMovies.map((movie) => (
+            <div key={`movie-${movie.id}`}>{movie.title}</div>
+          ))}
         </div>
       </section>
       <section>
         <div>
           <h1>Upcoming Movies</h1>
-          <ul>
-            {upcomingMovies.map((movie) => (
-              <li key={movie.id}>{movie.title}</li>
-            ))}
-          </ul>
+          {upcomingMovies.map((movie) => (
+            <div key={`movie-${movie.id}`}>{movie.title}</div>
+          ))}
         </div>
       </section>
     </main>

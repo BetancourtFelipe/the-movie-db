@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   description: 'The Movie Data Base',
 };
 
-export default function RootLayout({
-  children,
-}: {
+type Props = {
   children: React.ReactNode;
-}) {
+};
+
+export default function RootLayout(props: Props) {
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -45,7 +45,7 @@ export default function RootLayout({
             </div>
           </div>
         </header>
-        {children}
+        {props.children}
       </body>
     </html>
   );
