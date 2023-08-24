@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import styles from './nowPlaying.module.scss';
+import styles from './NowPlaying.module.scss';
 
 export default function NowPlaying() {
   const [movieData, setMovieData] = useState([]);
