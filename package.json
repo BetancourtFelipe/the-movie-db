@@ -2,11 +2,13 @@
   "name": "the-movie-db",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate": "ley --require tsm"
   },
   "dependencies": {
     "@types/node": "20.5.0",
