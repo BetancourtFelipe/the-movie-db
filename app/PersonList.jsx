@@ -2,6 +2,7 @@
 
 // import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
+import styles from './PersonList.module.scss';
 
 export default function PersonList() {
   const [personList, setPersonList] = useState([]);
@@ -44,17 +45,19 @@ export default function PersonList() {
     <main>
       <section>
         <div>
-          <div>
+          <div className={styles.personListBox}>
             {personList.map((person) => (
               <div key={person.id}>
-                <h3>{person.name}</h3>
-                {/* <img
+                <img
                   src={` https://api.themoviedb.org/3/person/images`}
                   alt={person.title}
-                  width={300}
+                  width={200}
                   height={300}
-                /> */}
-                <p>{person.popularity}</p>
+                />
+                <h3>{person.name}</h3>
+                <p className={styles.popularityField}>
+                  {person.popularity.toFixed(1)}
+                </p>
               </div>
             ))}
           </div>

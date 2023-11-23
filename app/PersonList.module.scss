@@ -1,0 +1,18 @@
+.personListBox {
+  display: flex;
+  flex-direction: row;
+  position: static;
+  width: 100%;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  gap: 40px;
+  font-size: small;
+}
+
+.popularityField {
+  border-radius: 50rem 50rem;
+  background-color: #0fd0ee;
+  width: 20px;
+  height: 20px;
+}
