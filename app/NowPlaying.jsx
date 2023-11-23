@@ -41,7 +41,9 @@ export default function NowPlaying() {
                   height={300}
                 />
                 <h3>{movie.title}</h3>
-                <p className={styles.voteField}>{movie.vote_average}</p>
+                <p className={styles.voteField}>
+                  {movie.vote_average.toFixed(1)}
+                </p>
               </div>
             ))}
           </div>
