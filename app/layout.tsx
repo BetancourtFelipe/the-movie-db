@@ -1,4 +1,4 @@
-// import './globals.scss';
+import './globals.scss';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
@@ -38,9 +38,9 @@ export default function RootLayout(props: Props) {
                 <Link className={styles.navLink} href="/login">
                   Login
                 </Link>
-                <Link className={styles.navLink} href="/register">
+                {/* <Link className={styles.navLink} href="/register">
                   Register
-                </Link>
+                </Link> */}
               </nav>
             </div>
           </div>

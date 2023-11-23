@@ -48,7 +48,7 @@ export default function PersonList() {
             {personList.map((person) => (
               <div key={person.id}>
                 <h3>{person.name}</h3>
-                {/* <Image
+                {/* <img
                   src={` https://api.themoviedb.org/3/person/images`}
                   alt={person.title}
                   width={300}
