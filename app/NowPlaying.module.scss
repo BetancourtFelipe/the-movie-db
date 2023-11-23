@@ -1,3 +1,11 @@
 .movieBox {
   border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  position: static;
+  width: 60%;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  gap: 40px;
 }

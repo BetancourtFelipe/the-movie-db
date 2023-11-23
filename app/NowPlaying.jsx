@@ -25,6 +25,8 @@ export default function NowPlaying() {
       .catch((err) => console.error('error:', err));
   }, []);
 
+  console.log(movieData);
+
   return (
     <main>
       <section>
@@ -33,8 +35,8 @@ export default function NowPlaying() {
             {movieData.map((movie) => (
               <div key={movie.id}>
                 <h3>{movie.title}</h3>
-                <Image
-                  src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
+                <img
+                  src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
                   alt={movie.title}
                   width={300}
                   height={300}
