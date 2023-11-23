@@ -11,3 +11,30 @@
 .movieBox {
   border: 1px solid green;
 }
+
+.landingHeader {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.introHeader {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.searchSection {
+  display: flex;
+  justify-content: center;
+  padding: 50px 50px;
+}
+
+.searchInput {
+  width: 50%;
+  border-radius: 10em;
+  height: 25px;
+}
+
+.nowPlayingField {
+  padding-left: 40px;
+  padding-right: 40px;
+}

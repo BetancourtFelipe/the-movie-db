@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+// import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import styles from './NowPlaying.module.scss';
 
@@ -34,14 +34,14 @@ export default function NowPlaying() {
           <div className={styles.movieBox}>
             {movieData.map((movie) => (
               <div key={movie.id}>
-                <h3>{movie.title}</h3>
                 <img
                   src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
                   alt={movie.title}
-                  width={300}
+                  width={200}
                   height={300}
                 />
-                <p>{movie.vote_average}</p>
+                <h3>{movie.title}</h3>
+                <p className={styles.voteField}>{movie.vote_average}</p>
               </div>
             ))}
           </div>

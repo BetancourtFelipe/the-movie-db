@@ -9,18 +9,21 @@ export default function HomePage() {
       <section>
         <div>
           <div>
-            <h1>Welcome to The Movie Database</h1>
-            <p>
+            <h1 className={styles.landingHeader}>
+              Welcome to The Movie Database
+            </h1>
+            <br />
+            <p className={styles.introHeader}>
               Millions of Movies, TV shows, and people to discover. Explore now.
             </p>
-            <div>
-              <input placeholder="Search" />
-              <button>Search</button>
-            </div>
+          </div>
+          <div className={styles.searchSection}>
+            <input className={styles.searchInput} placeholder="Search" />
+            <button>Search</button>
           </div>
         </div>
       </section>
-      <section>
+      <section className={styles.nowPlayingField}>
         <h2>Now Playing</h2>
         <div>
           <NowPlaying />

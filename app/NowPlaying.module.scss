@@ -1,5 +1,4 @@
 .movieBox {
-  border: 1px solid green;
   display: flex;
   flex-direction: row;
   position: static;
@@ -8,4 +7,13 @@
   top: 0;
   bottom: 0;
   gap: 40px;
+  font-size: x-small;
+}
+
+.voteField {
+  border-radius: 50rem 50rem;
+
+  background-color: #0fd0ee;
+  width: 20px;
+  height: 20px;
 }

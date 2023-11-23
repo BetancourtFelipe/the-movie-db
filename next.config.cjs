@@ -2,7 +2,7 @@
 const nextConfig = {
   experimental: {
     typedRoutes: true,
-    serverActions: true,
+    // serverActions: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
