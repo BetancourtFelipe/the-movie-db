@@ -51,6 +51,7 @@ export default function PersonList() {
             {personList.map((person) => (
               <div key={person.id}>
                 <img
+                  className={styles.personImage}
                   src={`https://image.tmdb.org/t/p/original${person.profile_path}`}
                   alt={person.title}
                   width={200}

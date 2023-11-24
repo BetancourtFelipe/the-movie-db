@@ -6,7 +6,7 @@ import PersonList from './PersonList';
 export default function HomePage() {
   return (
     <main className={styles.main}>
-      <section>
+      <section className={styles.sectionHeader}>
         <div>
           <div>
             <h1 className={styles.landingHeader}>
@@ -30,8 +30,8 @@ export default function HomePage() {
           <NowPlaying />
         </div>
       </section>
-      <section>
-        <div className={styles.personField}>
+      <section className={styles.personField}>
+        <div>
           <h2>Person</h2>
           <PersonList />
         </div>

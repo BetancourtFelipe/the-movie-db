@@ -25,8 +25,6 @@ export default function NowPlaying() {
       .catch((err) => console.error('error:', err));
   }, []);
 
-  console.log(movieData);
-
   return (
     <main>
       <section>
@@ -39,11 +37,12 @@ export default function NowPlaying() {
                   alt={movie.title}
                   width={200}
                   height={300}
+                  className={styles.NowPlayingImage}
                 />
-                <h3>{movie.title}</h3>
                 <p className={styles.voteField}>
                   {movie.vote_average.toFixed(1)}
                 </p>
+                <h3>{movie.title}</h3>
               </div>
             ))}
           </div>

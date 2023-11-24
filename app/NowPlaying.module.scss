@@ -6,8 +6,12 @@
   overflow-y: scroll;
   top: 0;
   bottom: 0;
-  gap: 40px;
+  gap: 20px;
   font-size: small;
+}
+
+.NowPlayingImage {
+  border-radius: 12px;
 }
 
 .voteField {

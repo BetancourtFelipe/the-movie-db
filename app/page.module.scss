@@ -4,8 +4,15 @@
   justify-content: center;
   align-content: center;
   background-color: #fff;
-  margin-top: 64px;
+  // margin-top: 64px;
   flex-direction: column;
+}
+
+.sectionHeader {
+  background-color: #042541;
+  margin-left: 150px;
+  margin-right: 150px;
+  opacity: 0.9;
 }
 
 .movieBox {
@@ -15,6 +22,7 @@
 .landingHeader {
   text-transform: uppercase;
   text-align: center;
+  padding-top: 40px;
 }
 
 .introHeader {
@@ -35,11 +43,17 @@
 }
 
 .nowPlayingField {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 100px 40px 100px 40px;
+  h2 {
+    padding-bottom: 40px;
+    font-weight: bold;
+  }
 }
 
 .personField {
   padding-left: 40px;
   padding-right: 40px;
+  h2 {
+    padding-bottom: 40px;
+  }
 }
