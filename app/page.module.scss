@@ -15,13 +15,11 @@
 .landingHeader {
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
 }
 
 .introHeader {
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
 }
 
 .searchSection {
@@ -37,6 +35,11 @@
 }
 
 .nowPlayingField {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.personField {
   padding-left: 40px;
   padding-right: 40px;
 }

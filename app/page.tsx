@@ -14,7 +14,8 @@ export default function HomePage() {
             </h1>
             <br />
             <p className={styles.introHeader}>
-              Millions of Movies, TV shows, and people to discover. Explore now.
+              Millions of Movies, TV shows and people to discover. <br />
+              Explore now.
             </p>
           </div>
           <div className={styles.searchSection}>
@@ -30,7 +31,8 @@ export default function HomePage() {
         </div>
       </section>
       <section>
-        <div>
+        <div className={styles.personField}>
+          <h2>Person</h2>
           <PersonList />
         </div>
       </section>

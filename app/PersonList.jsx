@@ -41,6 +41,8 @@ export default function PersonList() {
       .catch((err) => console.error('error:', err));
   }, []);
 
+  console.log(personList);
+
   return (
     <main>
       <section>
@@ -49,7 +51,7 @@ export default function PersonList() {
             {personList.map((person) => (
               <div key={person.id}>
                 <img
-                  src={` https://api.themoviedb.org/3/person/images`}
+                  src={`https://image.tmdb.org/t/p/original${person.profile_path}`}
                   alt={person.title}
                   width={200}
                   height={300}
