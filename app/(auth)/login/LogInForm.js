@@ -1,19 +1,24 @@
+import styles from './LoginForm.module.scss';
+
 export default function LoginForm() {
   return (
     <form>
       <div>
         <label>
-          username:
           <br />
           <input
-          // onChange={(event) => setUsername(event.currentTarget.value)}
+            className={styles.loginFormInput}
+            placeholder="username"
+            type="username"
+            // onChange={(event) => setUsername(event.currentTarget.value)}
           />
         </label>
         <br />
         <label>
-          password:
           <br />
           <input
+            className={styles.loginFormInput}
+            placeholder="password"
             type="password"
             // onChange={(event) => setPassword(event.currentTarget.value)}
           />
