@@ -25,7 +25,7 @@ export type RegisterResponseBodyPost =
   | Error;
 
 const userSchema = z.object({
-  //zod checks min length
+  // zod checks min length
   username: z.string().min(5),
   password: z.string().min(5),
 });
