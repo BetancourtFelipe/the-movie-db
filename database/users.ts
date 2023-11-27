@@ -1,20 +1,6 @@
 import { cache } from 'react';
 import { sql } from './connect';
 
-/*
-export const users = [
-  { id: 1, user_name: 'user1', password: 'userpwd1' },
-  { id: 2, user_name: 'user2', password: 'userpwd2' },
-  { id: 3, user_name: 'user3', password: 'userpwd3' },
-  { id: 4, user_name: 'user4', password: 'userpwd4' },
-  { id: 5, user_name: 'user5', password: 'userpwd5' },
-];
-
-export function getUserById1(id: number) {
-  return users.find((user) => user.id === id);
-}
-*/
-
 export type User = {
   id: number;
   username: string;
@@ -111,17 +97,3 @@ export const getUserWithPasswordHashByUsername = cache(
     return users;
   },
 );
-
-/*
-export const getUserById2 = cache(async (id: number) => {
-  const [user] = await sql<User[]>`
-    SELECT
-      *
-    FROM
-      users
-    WHERE
-      id = ${id}
-  `;
-  return user;
-});
-*/
