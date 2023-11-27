@@ -2,7 +2,7 @@
 // import { cookies } from 'next/headers';
 // import { createSession } from '../../../../database/sessions';
 // import { createUser, getUserByUsername } from '../../../../database/users';
-// import { User } from '../../../../migrations/1687334782-createUsers';
+// import { User } from '../../../../migrations/createTableUsers.ts';
 // import { secureCookieOptions } from '../../../../util/cookies';
 
 import bcrypt from 'bcrypt';
