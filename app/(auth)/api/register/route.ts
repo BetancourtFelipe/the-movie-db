@@ -85,33 +85,3 @@ export async function POST(
 
   return NextResponse.json({ user: newUser });
 }
-
-/*
-  // console.log(result);
-
-  // 5. Create a token
-  const token = crypto.randomBytes(100).toString('base64');
-  // 6. Create the session record
-
-  const session = await createSession(token, newUser.id);
-
-  if (!session) {
-    return NextResponse.json(
-      {
-        error: 'Error creating the new session',
-      },
-      { status: 500 },
-    );
-  }
-
-  // 7. Send the new cookie in the headers
-  cookies().set({
-    name: 'sessionToken',
-    value: session.token,
-    ...secureCookieOptions,
-  });
-
-  // 7. return the new user to the client
-  return NextResponse.json({ user: newUser });
-}
-*/
