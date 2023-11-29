@@ -15,8 +15,12 @@
 }
 
 .voteField {
-  border-radius: 50rem 50rem;
+  border-radius: 50%;
   background-color: #90cea1;
   width: 20px;
   height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
 }

@@ -32,7 +32,7 @@ export default function HomePage() {
       </section>
       <section className={styles.personField}>
         <div>
-          <h2>Person</h2>
+          <h2>Actors</h2>
           <PersonList />
         </div>
       </section>
