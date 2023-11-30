@@ -62,7 +62,7 @@ export async function POST(
       {
         error: 'username is already taken, please choose a different username',
       },
-      { status: 422 },
+      { status: 409 },
     );
   }
 
