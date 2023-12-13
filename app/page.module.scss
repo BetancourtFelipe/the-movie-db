@@ -23,11 +23,13 @@
   text-transform: uppercase;
   text-align: center;
   padding-top: 40px;
+  color: white;
 }
 
 .introHeader {
   text-transform: uppercase;
   text-align: center;
+  color: white;
 }
 
 .searchSection {
@@ -37,9 +39,30 @@
 }
 
 .searchInput {
-  width: 50%;
-  border-radius: 10em;
-  height: 25px;
+  // width: 100%;
+  // border-radius: 10em;
+  // border: solid 1px;
+  // height: 40px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 10em 0 0 10em;
+}
+
+.searchButton {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  border-radius: 0 10em 10em 0;
+  background: linear-gradient(to right, #90cea1, #01b4e4);
 }
 
 .nowPlayingField {

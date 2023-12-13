@@ -4,3 +4,15 @@
   border-radius: 5px;
   border: solid 1px #042541;
 }
+.loginButton {
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  border: solid 1px #042541;
+  background-color: white;
+}
+
+.loginButton:hover {
+  background-color: #042541;
+  color: white;
+}

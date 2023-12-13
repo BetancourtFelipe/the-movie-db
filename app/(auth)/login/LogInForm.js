@@ -25,7 +25,7 @@ export default function LoginForm() {
         </label>
         <br />
         <br />
-        <button>Login</button>
+        <button className={styles.loginButton}>Login</button>
       </div>
     </form>
   );

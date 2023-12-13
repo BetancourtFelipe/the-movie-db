@@ -20,7 +20,7 @@ export default function HomePage() {
           </div>
           <div className={styles.searchSection}>
             <input className={styles.searchInput} placeholder="Search" />
-            <button>Search</button>
+            <button className={styles.searchButton}>Search</button>
           </div>
         </div>
       </section>

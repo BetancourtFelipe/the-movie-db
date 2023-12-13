@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
+import styles from './page.module.scss';
 
 export default function Movies() {
   const [popularMovies, setPopularMovies] = useState([]);
@@ -77,34 +78,55 @@ export default function Movies() {
   }, []);
 
   return (
-    <main>
-      <section>
-        <h1>Popular Movies</h1>
+    <main className={styles.mainMovies}>
+      <section className={styles.popularMovies}>
+        <h2>Popular Movies</h2>
         <div>
-          <div>
+          <div className={styles.popularMoviesCard}>
             {popularMovies.map((movie) => (
               <div key={`movie-${movie.id}`}>
-                <p>{movie.title}</p>
+                <img
+                  src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+                  alt={movie.title}
+                  width={200}
+                  height={300}
+                />
+                <h3>{movie.title}</h3>
                 <p>{movie.overview}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <h1>Top Rated Movies</h1>
-
+      <section className={styles.topRatedMovies}>
+        <div className={styles.topRatedMoviesCard}>
+          <h2>Top Rated Movies</h2>
           {topRatedMovies.map((movie) => (
-            <div key={`movie-${movie.id}`}>{movie.title}</div>
+            <div key={`movie-${movie.id}`}>
+              <h2>{movie.title}</h2>
+              <img
+                src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+                alt={movie.title}
+                width={200}
+                height={300}
+              />
+            </div>
           ))}
         </div>
       </section>
-      <section>
-        <div>
-          <h1>Upcoming Movies</h1>
+      <section className={styles.upcommingMovies}>
+        <div className={styles.upcomingMoviesCard}>
+          <h2>Upcoming Movies</h2>
           {upcomingMovies.map((movie) => (
-            <div key={`movie-${movie.id}`}>{movie.title}</div>
+            <div key={`movie-${movie.id}`}>
+              <h2>{movie.title}</h2>
+              <img
+                src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+                alt={movie.title}
+                width={200}
+                height={300}
+              />
+            </div>
           ))}
         </div>
       </section>
